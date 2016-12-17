@@ -127,6 +127,7 @@ img { border: 0; max-width: 100%; }
 #topnav .navbar ul {
   list-style: none;
 }
+
 #topnav .navbar ul li {
   display: block;
   float: left;
