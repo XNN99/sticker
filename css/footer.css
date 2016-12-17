@@ -1,0 +1,203 @@
+/*-- footer --*/
+.footer{
+	padding:6em 0;
+	position:relative;
+	background:#121212;
+	border-top:5px solid #333333;
+	font-family: 'Roboto', sans-serif;
+	font-style:normal;
+	text-align:center;
+	}
+.footer-icon{
+	position:absolute;
+	top:-9%;
+	left: 48%;
+	}
+.footer-social{
+	margin:3em 0;
+	}
+.footer-social ul{
+	padding:0;
+	margin:0;
+	}
+.footer-social ul li{
+	display:inline-block;
+	}
+.footer-social ul li a.dribble{
+	background:url(../images/a.png) no-repeat 0px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.dribble:hover{
+	background:url(../images/a.png) no-repeat 0px -50px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.facebook{
+	background:url(../images/a.png) no-repeat -60px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.facebook:hover{
+	background:url(../images/a.png) no-repeat -60px -49px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.twitter{
+	background:url(../images/a.png) no-repeat -119px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.twitter:hover{
+	background:url(../images/a.png) no-repeat -119px -49px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.be{
+	background:url(../images/a.png) no-repeat -169px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.be:hover{
+	background:url(../images/a.png) no-repeat -169px -48px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.in{
+	background:url(../images/a.png) no-repeat -218px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.in:hover{
+	background:url(../images/a.png) no-repeat -218px -47px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.fli{
+	background:url(../images/a.png) no-repeat -266px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.fli:hover{
+	background:url(../images/a.png) no-repeat -266px -47px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+	
+.footer-social ul li a.rad{
+	background:url(../images/a.png) no-repeat -325px 0px;
+	display:block;
+	width: 48px;
+	height: 43px;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-social ul li a.rad:hover{
+	background:url(../images/a.png) no-repeat -325px -47px;
+	display:block;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.footer-nav{
+	margin-bottom:3em;
+	}
+.footer-nav ul{
+	padding:0;
+	margin:0;
+	}
+.footer-nav ul li{
+	display:inline-block;
+	margin:0 5px;
+	}
+.footer-nav ul li a{
+	font-size:15px;
+	color:#fff;
+	text-decoration:none;
+	font-weight: 200;
+	}
+.footer-nav ul li a.foot{
+	color:#12D194;
+	text-decoration:none;
+	}
+.footer p{
+	color:#777777;
+	font-size:14px;
+	margin:0;
+	}
+.footer p a{
+	color:#fff;
+	font-size:14px;
+	text-decoration:none;
+	font-weight: 200;
+	}
+.footer p a:hover{
+	color:#777777;
+	text-decoration:none;
+	}
+/*-- //footer --*/

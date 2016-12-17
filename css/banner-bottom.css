@@ -1,0 +1,139 @@
+/*-- banner-bottom --*/
+.banner-bottom{
+	padding:6em 0;
+	}
+.banner-bottom-left{
+	float:left;
+	width:45%;
+	font-family: 'Roboto', sans-serif;
+	font-style:normal;
+	}
+.banner-bottom-left1{
+	float:left;
+	width:50%;
+	}
+.banner-bottom-left h4{
+	color:#2A2A2A;
+	font-size:28px;
+	margin:0;
+	font-weight: 400;
+	}
+.banner-bottom-left p{
+	margin: 1em 0 4em;
+	font-size: 15px;
+	color: #626262;
+	line-height: 25px;
+	font-weight: 300;
+	}
+.banner-bottom-left p span{
+	display:block;
+	margin-top: 2em;
+	}
+.get{
+	float:left;
+	}
+.get a{
+	background:#121212;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 3em;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.get a:hover{
+	color:#121212;
+	background:#CDD2D7;
+	text-decoration: none;
+	}
+.buy{
+	float:left;
+	margin-left: 3em;
+	}
+.buy a{
+	background:#12D194;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 3em;
+	border-bottom:2px solid #6FE8C1;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.buy a:hover{
+	color:#12D194;
+	background:#CDD2D7;
+	text-decoration: none;
+	border-bottom:2px solid #CDD2D7;
+	}
+.banner-bottom-right{
+	float:right;
+	width:50%;
+	}
+.banner-bottom-right1{
+	float:right;
+	width:45%;
+	}
+.fig{
+	float:left;
+	width:45%;
+	}
+.fig img{
+	width:100%;
+	}
+.fig1{
+	float:right;
+	width: 40%;
+	margin-top: 10em;
+	margin-left: 4em;
+	}
+.fig1 img{
+	width:100%;
+	}
+.watch-demo{
+	background:#F5F5F5;
+	font-family: 'Roboto', sans-serif;
+	font-style:normal;
+	padding:6em 0;
+	}
+.watch a{
+	background:#12D194;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 2em;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	}
+.watch a:hover{
+	background:#CDD2D7;
+	color:#12D194;
+	text-decoration: none;
+	}
+.banner-bottom-right1 h4{
+	color:#2A2A2A;
+	font-size:28px;
+	margin:0;
+	font-weight: 400;
+	}
+.banner-bottom-right1 p.para{
+	margin: 1em 0 3em;
+	font-size: 15px;
+	color: #626262;
+	line-height: 25px;
+	font-weight: 300;
+	}
+.banner-bottom-right1 p.para span{
+	display:block;
+	margin-top: 2em;
+	}
+/*-- //banner-bottom --*/
