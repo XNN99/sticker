@@ -117,23 +117,23 @@ img { border: 0; max-width: 100%; }
   overflow: hidden;
 }
 
-#topnav nav {
+#topnav .navbar {
   position: absolute;
   top: 0; 
   right: -10px;
   padding: 2.2em 0em;
 }
 
-#topnav nav ul {
+#topnav .navbar ul {
   list-style: none;
 }
-#topnav nav ul li {
+#topnav .navbar ul li {
   display: block;
   float: left;
   margin:0em 0.5em;
 }
 
-#topnav nav ul li a {
+#topnav .navbar ul li a {
   display: block;
   font-size: 1.2em;
   color: #fff;
@@ -145,11 +145,11 @@ img { border: 0; max-width: 100%; }
  -o-transition: all 0.3s ease-out;
  transition: all 0.3s ease-out;
 }
-#topnav nav ul li a:hover {
+#topnav .navbar ul li a:hover {
   color:#64939E;
   background: #393B3A; 
 }
-#topnav nav ul li.active>a {
+#topnav .navbar ul li.active>a {
   color:#64939E;
   background: #393B3A; 
 }
@@ -182,7 +182,7 @@ img { border: 0; max-width: 100%; }
 	padding:0.5em 0em;
 	}
   #topnav { height: auto; }
-  #topnav nav { 
+  #topnav .navbar { 
     display: none; 
     position: static;
     width: 100%;
@@ -190,8 +190,8 @@ img { border: 0; max-width: 100%; }
     top: auto;
     right: auto;
   }
-  #topnav nav ul li { float: none; margin: 0;  background: #f0f0f0;}
-  #topnav nav ul li a {
+  #topnav .navbar ul li { float: none; margin: 0;  background: #f0f0f0;}
+  #topnav .navbar ul li a {
     display: block;
     width: 100%;
     line-height:1.9em;
@@ -210,7 +210,7 @@ img { border: 0; max-width: 100%; }
 	transition: all 0.3s ease-out;
 	background: none;
   }
-  #topnav nav ul li a.sel {
+  #topnav .navbar ul li a.sel {
     color: #6f8767;
     background: #cbdcc5;
   }
@@ -456,7 +456,7 @@ form input[type="submit"]:hover{
 	.wrap{
 		width:85%;
 	}
-	#topnav nav ul li a,.footer-right ul li a { 
+	#topnav .navbar ul li a,.footer-right ul li a { 
 	padding: 0.7em 0.85em;
 	}
 	.pricing-grid ul li a {
@@ -511,7 +511,7 @@ form input[type="submit"]:hover{
 	#topnav h1 {
 	padding: 1.9em 0em;
 	}
-	#topnav nav ul li a, .footer-right ul li a {
+	#topnav .navbar ul li a, .footer-right ul li a {
 	padding: 0.65em 0.7em;
 	}
 	.span_1_of_1 h3 {
@@ -563,7 +563,7 @@ form input[type="submit"]:hover{
 	#topnav #navbtn {
 		padding: 1em 0;
 	}
-	#topnav nav ul li a, .footer-right ul li a {
+	#topnav .navbar ul li a, .footer-right ul li a {
 	padding: 0.3em 0.4em;
 	}
 	.span_1_of_1 h3,.our-story h3 {
@@ -654,7 +654,7 @@ form input[type="submit"]:hover{
 	#topnav #navbtn {
 	padding: 1.2em 0;
 	}
-	#topnav nav ul li a, .footer-right ul li a {
+	#topnav .navbar ul li a, .footer-right ul li a {
 	padding: 0.2em 0.4em;
 	}
 	.span_1_of_1 h3,.our-story h3 { 
@@ -705,7 +705,7 @@ form input[type="submit"]:hover{
 	#topnav #navbtn {
 	padding: 1.2em 0;
 	}
-	#topnav nav ul li a{
+	#topnav .navbar ul li a{
 	padding: 0.1em 0.6em;
 	}
 	.span_1_of_1 h3,.our-story h3 {
