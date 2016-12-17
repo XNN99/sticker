@@ -1,11 +1,11 @@
 
-title: Karna
-desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
+title: Sticker
+desctiption: Sticker is a responsive jekyll theme which includes pinterest like pins.
 url: http://webjeda.com/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/karna"
+baseurl: ""
 
 
 sass:
