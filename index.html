@@ -1,18 +1,220 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Sticker Website | Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/banner-bottom.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
 
-<div id="container" class="cols">
-    {% for post in site.posts %}
-    <div class="box" style="background-color:#{{post.color}}">
-       {% if post.img %}
-          <img class="feat-image" src={{ "/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-       {% endif %}
-          <div class="container">
-            <h4>{{post.title}}</h4>
-            <p>{{post.description}}</p>
-             <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div> 
-        </div>   
-    </div>
-   {% endfor %}
+<div class="content" id="home">
+	<div class="header">
+		<div class="wrap">
+		      <header id="topnav">
+			        <nav>
+			        		 <ul>
+			        		 	<li class="active"><a href="/roject" class="scroll">Projects</a></li>
+								<li><a href="#blog" class="scroll">Blog</a></li>
+								<div class="clear"> </div>
+							</ul>
+		        	</nav>
+			         <h1><a href="index.html">Sticker</a></h1>
+			        	<a href="#" id="navbtn">Nav Menu</a>
+			        <div class="clear"> </div>
+		        </header>
+		    </div>
+		</div>
+		<!-----script------------->
+		<script type="text/javascript"  src="js/menu.js"></script>
+
+	<div class="slider" id="home"> 	
+		<div class="wrap">
+				<!---start-da-slider----->
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Best Ideas Start On Paper</h2>
+					<p>Revolvationary notebook with eco-friendly paper,advanced surface technology and degital sharing integration.</p>
+				</div>
+				<div class="da-slide">
+					<h2>Best Ideas Start On Paper</h2>
+					<p>Revolvationary notebook with eco-friendly paper,advanced surface technology and degital sharing integration.</p>
+					
+				</div>
+				<div class="da-slide">
+					<h2>Best Ideas Start On Paper</h2>
+					<p>Revolvationary notebook with eco-friendly paper,advanced surface technology and degital sharing integration.</p>
+				
+				</div>
+				<div class="da-slide">
+					<h2>Best Ideas Start On Paper</h2>
+					<p>Revolvationary notebook with eco-friendly paper,advanced surface technology and degital sharing integration.</p>
+				
+				</div>
+			</div>
+		
+			<script type="text/javascript" src="js/jquery.cslider.js"></script>
+					 <!---strat-slider---->
+				    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+					<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+						<script type="text/javascript">
+							$(function() {
+							
+								$('#da-slider').cslider({
+									autoplay	: true,
+									bgincrement	: 450
+								});
+							
+							});
+					</script>
+					<!---//End-da-slider----->
+			
+		</div>
+	</div>
 </div>
+<!---start-team----->
+	<div  class="team" id="team">
+		<div class="wrap">
+			<div class="section group">
+				<div class="col_1_of_1 span_1_of_1">
+				   <h3>Start proto typing your next project </h3>
+				  <p>Terry Rechardson cardigan whatever gentrify Tumblr,gluten-free shorts craysechlitz solvage DIY sutainable Helvetila sriracha.Benh mi ethical.put abird on it VHS irony bisicle rights slow-card iterally retro-sktebord ugh 90'Helvetic hash tag.Next ketfiyeah cornhole park belly,slow-card schilitz.</p>
+				</div>
+				<div class="pen">
+					<img src="images/pen.png">
+				</div>
+		 </div>
+		</div>
+	</div>
+<!---//end-team----->    	
+
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+	<div class="container">
+		<div class="banner-bottom-left">
+			<h4>CARDIOVASCULAR EXERCISE</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Cras euismod justo sit amet porttitor viverra. 
+			In hac habitasse platea dictumst. In cursus, massa id aliquet volutpat,
+			turpis dui fermentum purus, tempor rhoncus mauris urna sed tortor.
+			<span>Aliquam in dolor eu ipsum elementum auctor vitae eget felis. 
+			Integer feugiat rutrum accumsan. Donec velit eros, eleifend vitae nisi nec,
+			mattis auctor dui. Aliquam erat volutpat.
+			Curabitur eu felis ac augue mollis auctor hendrerit ut velit. 
+			Maecenas tempus viverra sollicitudin.</span></p>
+			<div class="get" hidden="hidden">
+				<a href="#">view</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-bottom-right">
+			<div class="fig">
+				<img src="images/2.png" alt=" " />
+			</div>
+			<div class="fig1">
+				<img src="images/3.png" alt=" " />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>	
+	<div class="watch-demo">
+	<div class="container">
+		<div class="banner-bottom-right1">
+			<h4>GOOD FOR HEALTH</h4>
+			<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Cras euismod justo sit amet porttitor viverra. In hac 
+			habitasse platea dictumst. In cursus, massa id aliquet volutpat,
+			turpis dui fermentum purus, tempor rhoncus mauris urna sed tortor.
+			<span> Aliquam in dolor eu ipsum elementum auctor vitae eget felis. 
+			Integer feugiat rutrum accumsan.</span></p>
+			<div class="watch">
+				<a href="#">WATCH DEMO</a>
+			</div>
+		</div>
+		<div class="banner-bottom-left1">
+			<div class="fig">
+				<img src="images/6.png" alt=" " />
+			</div>
+			<div class="fig1">
+				<img src="images/7.png" alt=" " />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>	
+		<div class="banner-bottom">
+	<div class="container">
+		<div class="banner-bottom-left">
+			<h4>CARDIOVASCULAR EXERCISE</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Cras euismod justo sit amet porttitor viverra. 
+			In hac habitasse platea dictumst. In cursus, massa id aliquet volutpat,
+			turpis dui fermentum purus, tempor rhoncus mauris urna sed tortor.
+			<span>Aliquam in dolor eu ipsum elementum auctor vitae eget felis. 
+			Integer feugiat rutrum accumsan. Donec velit eros, eleifend vitae nisi nec,
+			mattis auctor dui. Aliquam erat volutpat.
+			Curabitur eu felis ac augue mollis auctor hendrerit ut velit. 
+			Maecenas tempus viverra sollicitudin.</span></p>
+			<div class="watch">
+				<a href="#">DOWNLOAD NOW</a>	
+			</div>
+		</div>
+		<div class="banner-bottom-right">
+			<div class="fig">
+				<img src="images/4.png" alt=" " />
+			</div>
+			<div class="fig1">
+				<img src="images/5.png" alt=" " />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-icon footer-icon-top">
+			<a href="#home" class="scroll"><img src="images/row.png" alt=" " /></a>
+		</div>
+		<div class="footer-social">
+			<ul>
+				<li><a href="#" class="dribble"> </a></li>
+				<li><a href="#" class="facebook"> </a></li>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="be"> </a></li>
+				<li><a href="#" class="in"> </a></li>
+				<li><a href="#" class="fli"> </a></li>
+				<li><a href="#" class="rad"> </a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										$().UItoTop({ easingType: 'easeOutQuart' });
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
