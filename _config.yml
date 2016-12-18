@@ -37,6 +37,6 @@ disqus-shortname: webjeda-demo
 api-token:   
 
 include: [_pages]
-version: 0.8
+version: 1.0
 
 gems: [jekyll-paginate, jekyll-seo-tag]
