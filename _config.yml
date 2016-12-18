@@ -1,7 +1,7 @@
 
 title: Sticker
 desctiption: Sticker is a responsive jekyll theme which includes pinterest like pins.
-url: http://webjeda.com/
+url: http://sticker.com/
 permalink: ':title/'
 
 markdown: kramdown
@@ -30,7 +30,7 @@ highlight: rouge
 analytics: UA-83979019-1
 
 # Comments
-disqus-shortname: webjeda-demo
+disqus-shortname: sticker-web
 
 # Contact form
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
