@@ -10,7 +10,25 @@ author: Carlwang
 * some text
 {: toc}
 
-# Installation: 
+# 需要工具
+- Jekyll 是一个简单的免费的Blog生成工具。
+- MarkdownPad Windows下最好的写作利器。
+		
+# 准备环境: 
+jekyll是``Ruby``的一个gem包,安装稍显复杂：
+
+1. 下载`Ruby`。[ruby下载地址](http://www.baidu.com)
+2. 安装`Ruby`，通过下面命令检测Ruby是否安装成功，并添加到环境变量中。
+
+```
+	ruby -v
+```
+
+3. 
+
+
+
+当``Ruby``
 Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
 
 Watch my video on instlallation
