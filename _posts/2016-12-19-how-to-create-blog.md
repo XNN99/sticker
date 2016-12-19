@@ -21,9 +21,7 @@ jekyll是``Ruby``的一个gem包,安装稍显复杂：
 2. 安装`Ruby`，通过下面命令检测Ruby是否安装成功，并添加到环境变量中。
 
 {% highlight markdown %}
- 
-ruby -v
-
+>ruby -v
 ruby 2.2.2p95(2015-04-13 revision 50295)[x64-mingw32]
 {% endhighlight %}
 
