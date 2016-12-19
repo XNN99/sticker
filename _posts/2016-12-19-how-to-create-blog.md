@@ -2,7 +2,7 @@
 layout: post
 title: " 使用Jekyll+Markdown创建博客站点"
 description: 这里介绍如何通过Jekyll和Markdown工具建立自己博客站点，文章只简要介绍博客搭建步骤。 
-img: jekyll.png
+img: jekyll.jpg
 color: BF360C
 author: Carlwang
 ---
