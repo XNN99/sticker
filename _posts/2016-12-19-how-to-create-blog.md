@@ -20,20 +20,12 @@ jekyll是``Ruby``的一个gem包,安装稍显复杂：
 1. 下载`Ruby`。[ruby下载地址](http://www.baidu.com)
 2. 安装`Ruby`，通过下面命令检测Ruby是否安装成功，并添加到环境变量中。
 
-```python
+{% highlight markdown %}
  
 ruby -v
 
 ruby 2.2.2p95(2015-04-13 revision 50295)[x64-mingw32]
-```
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
 
 当``Ruby``
 Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
