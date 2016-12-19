@@ -26,9 +26,13 @@ ruby -v
 
 ruby 2.2.2p95(2015-04-13 revision 50295)[x64-mingw32]
 ```
-
-3. 
-
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
 
 
 当``Ruby``
