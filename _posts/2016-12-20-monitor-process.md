@@ -12,21 +12,20 @@ author: Carlwang
 
 ## 场景一
 在客户环境中，我常遇到产品程序平凡重启动但始终无法启动成功这类问题，加之客户环境对我们是不见的。由于种种限制，要想找到RootCase困难重重。但再难的问题想尽一切办法、扣破脑袋也必须要解决。因为客户是我们的上帝。首先想到的监控进程启动停止信息，那到第一手信息最为关键。
+
 ## 场景二
 涉足Windows监控领域多年，我们常常需要对用户系统中程序使用情况做监控，获取足够多的信息，以便进一步分析用户行为。然而以往经验都是在内核层Hook SSDT等内核驱动技术实现，这些技术方式从系统级实现，技术太重，要求太高，代价太大。
 
 > 那么有没有一种轻量级的技术来实现。ETW(Event Tracing for Windows)提供了一种对用户层应用程序和内核层驱动创建的事件对象的跟踪记录机制。它提供了跟踪进程启动与停止事件。ETW 的真正优点之一是你可以用自己的操作关联系统生成的事件，当系统事件发生时，你关联的操作会收到该类事件。
 > 这篇文章我将实现一个简单应用程序，它调用``ProcessMonitor``来监视系统中进程启动和停止。我们会看到它是如此的简单，代码也不超过50行。这篇采用C#语言实现。
 
-## 实现进程监视
+## 实现依赖
+C#实现进程启动停止行为监视需要依赖``TraceEvent``库，该库可以通过``程序包管理控制台``获取安装。
+{% highlight csharp %}
+PM> Install-Package Microsoft.Diagnostics.Tracing.TraceEvent
+{% endhighlight %}
 
-1. 在Visual studio中创建``控制台应用程序``。
-2. 向工程添加``TraceEvent``库引用。
-3. 编写代码跟踪进程启动停止事件。
-	1. 打开TraceEventSession对象，如果文件名为空标明是``real time session``.
-	2. 连接
-
-## 实例
+## 主要逻辑
 {% highlight csharp %}
 var sessionName = "ProessMonitorSession";
 using (var session = new TraceEventSession(sessionName, null))  
@@ -93,3 +92,5 @@ using (var session = new TraceEventSession(sessionName, null))
 }
 
 {% endhighlight %}
+
+未完待续....
