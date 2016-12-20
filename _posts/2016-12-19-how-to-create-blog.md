@@ -18,32 +18,43 @@ author: Carlwang
 # 准备环境: 
 jekyll是``Ruby``的一个gem包,安装稍显复杂：
 
-1. 下载`Ruby`。[ruby下载地址](http://www.baidu.com)
-2. 安装`Ruby`，通过下面命令检测Ruby是否安装成功，并添加到环境变量中。
+## 1.安装`Ruby`
+[ruby下载地址](http://www.ruby-lang.org/en/downloads/)
+通过下面命令检测Ruby是否安装成功，并添加到环境变量中。
 {% highlight markdown %}
 >ruby -v
 ruby 2.2.2p95(2015-04-13 revision 50295)[x64-mingw32]
 {% endhighlight %}
+## 2.安装`Python`
+[Python下载地址](https://www.python.org/downloads/)
+通过下面命令检测Python是否安装成功，并添加到环境变量中。
+{% highlight markdown %}
+C:\Users\Administrator>python -V
+Python 3.5.2
+{% endhighlight %}
 
-3. 安装 Pygments。
+## 3.安装 ``Pygments``
 {% highlight markdown %}
 easy_install Pygments
 {% endhighlight %}
 安装完成后在网站的配置文件 _config.yml 里将 highlighter 的值设置为 pygments，即可。
 
-4. 接下来需要安装Jekyll，因为Jekyll是gem包，因此需要使用`gem`命令安装。
+## 4. 接下来需要安装``Jekyll``
+因为``Jekyll``是`gem`包，因此需要使用`gem`命令安装。
 {% highlight markdown %}
 gem install jekyll
 {% endhighlight %}
 
-5. 新建一个应用存放目录作为你的博客工作目录。进入目录并执行下面命令：
+## 5. 新建一个应用
+新建一个目录作为你的博客工作目录。进入目录并执行下面命令：
 {% highlight markdown %}
 jekyll new myblog
 {% endhighlight %}
 其中myblog是博客站点名字。生成站点目录结构:
 ![blogdir]({{site.baseurl}}/images/blog-dir.png)
 
-6. 启动站点,进入站点的目录，运行jekyll serve站点成功启动，默认端口4000:
+## 6. 启动站点
+进入站点的目录，运行``jekyll serve``站点成功启动，默认端口``4000``:
 {% highlight markdown %}
 E:\workspace\Projects\myblog\sticker>jekyll serve
 Configuration file: E:/workspace/Projects/myblog/sticker/_config.yml
