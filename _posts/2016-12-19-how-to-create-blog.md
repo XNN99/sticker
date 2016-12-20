@@ -29,7 +29,7 @@ ruby 2.2.2p95(2015-04-13 revision 50295)[x64-mingw32]
 [Python下载地址](https://www.python.org/downloads/)
 通过下面命令检测Python是否安装成功，并添加到环境变量中。
 {% highlight markdown %}
-C:\Users\Administrator>python -V
+>python -V
 Python 3.5.2
 {% endhighlight %}
 
@@ -39,11 +39,12 @@ easy_install Pygments
 {% endhighlight %}
 安装完成后在网站的配置文件 _config.yml 里将 highlighter 的值设置为 pygments，即可。
 
-## 4. 接下来需要安装``Jekyll``
+## 4. 安装``Jekyll``
 因为``Jekyll``是`gem`包，因此需要使用`gem`命令安装。
 {% highlight markdown %}
 gem install jekyll
 {% endhighlight %}
+到此``jekyll``开发环境已经搭建完成。可以尝试建立你的博客了。
 
 ## 5. 新建一个应用
 新建一个目录作为你的博客工作目录。进入目录并执行下面命令：
