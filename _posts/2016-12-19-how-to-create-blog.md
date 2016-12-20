@@ -45,18 +45,18 @@ jekyll new myblog
 
 6. 启动站点,进入站点的目录，运行jekyll serve站点成功启动，默认端口4000:
 {% highlight markdown %}
-E:\workspace\Projects\myblog\sticker\images>jekyll serve
-Configuration file: none
-Configuration file: none
-            Source: E:/workspace/Projects/myblog/sticker/images
-       Destination: E:/workspace/Projects/myblog/sticker/images/_site
+E:\workspace\Projects\myblog\sticker>jekyll serve
+Configuration file: E:/workspace/Projects/myblog/sticker/_config.yml
+Configuration file: E:/workspace/Projects/myblog/sticker/_config.yml
+            Source: E:/workspace/Projects/myblog/sticker
+       Destination: E:/workspace/Projects/myblog/sticker/_site
  Incremental build: disabled. Enable with --incremental
       Generating...
-                    done in 0.175 seconds.
+                    done in 1.708 seconds.
   Please add the following to your Gemfile to avoid polling for changes:
     gem 'wdm', '>= 0.1.0' if Gem.win_platform?
- Auto-regeneration: enabled for 'E:/workspace/Projects/myblog/sticker/images'
-Configuration file: none
+ Auto-regeneration: enabled for 'E:/workspace/Projects/myblog/sticker'
+Configuration file: E:/workspace/Projects/myblog/sticker/_config.yml
     Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 {% endhighlight %}
