@@ -76,3 +76,6 @@ Configuration file: E:/workspace/Projects/myblog/sticker/_config.yml
 <blockquote>
 如果启动jekyll服务时遇到少包的话，使用``gem install xxx``安装好后再启动`jekyll`服务，即可。
 </blockquote>
+
+
+> 下一节我们继续讨论博客搭建后续过程。
