@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "获取系统信息之powershell"
+title: "powershell魔法魅力（一）之系统信息"
 description: 通过这篇文章我将探讨如何通过Powershell获取系统信息，体会powershell的魔法魅力。 
 img: image-9.jpg
 color: ff1744
