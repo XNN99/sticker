@@ -60,7 +60,8 @@ systeminfo.exe /FO CSV |
 {% endhighlight %}
 
 结果漂亮多了!
-{% hightlight markdown %}
+
+{% highlight markdown %}
 PS C:\> $header = 'HostName','OSName','OSVersion','OSManufacturer','OSConfig','Buildtype',`
 >> 'RegisteredOwner','RegisteredOrganization','ProductID','InstallDate','StartTime','Manufacturer',`
 >> 'Model','Type','Processor','BIOSVersion','WindowsFolder','SystemFolder','StartDevice','Culture',`
@@ -117,7 +118,7 @@ NetworkAdapter          : 2 NIC(s) Installed.,[01]: Intel(R) PRO/1000 MT Network
 由于powershell和.Net结合非常紧密，两者关系类似于JAVA和groovy关系。接着让来体验下powershell魔力。
 客到先上菜：
 
-{% hightlight csharp %}
+{% highlight csharp %}
 	String srciptText = @"$header = 'HostName','OSName','OSVersion','OSManufacturer','OSConfig','Buildtype',`
 	'RegisteredOwner','RegisteredOrganization','ProductID','InstallDate','StartTime','Manufacturer',`
 	'Model','Type','Processor','BIOSVersion','WindowsFolder','SystemFolder','StartDevice','Culture',`
