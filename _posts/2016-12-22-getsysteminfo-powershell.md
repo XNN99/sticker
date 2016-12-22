@@ -153,5 +153,6 @@ NetworkAdapter          : 2 NIC(s) Installed.,[01]: Intel(R) PRO/1000 MT Network
     }
 {% endhighlight %}
 从上面代码可以看出在C#中获取每一个域的值是多麽简单，只需要：
+
 > obj.Members["HostName"].Value
 就获取出来了，完全不需要自己动手解析。这也是优于groovy的地方。
