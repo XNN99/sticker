@@ -12,6 +12,7 @@ author: Carlwang
 
 ## 前言
 我们在开发软件时常常需要获取操作系统信息，如：``”主机名“``，``”操作系统名“``，``”操作系统版本“``,``“系统总内存”``,``“系统可用内存”``等等。在Windows下通常有以下几种实现方式：
+
 1. 使用Powershell+systeminfo实现。
 2. 调用Win32API方式实现（GetVersionEx，GlobalMemoryStatusEx，GlobalMemoryStatus）。
 3. 调用WMI实现，Win32_OperatingSystem，Win32_DiskDrive，Win32_PhysicalMedia。
