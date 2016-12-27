@@ -11,11 +11,20 @@ author: Carlwang
 {: toc}
 
 ## 环境准备
-这里将介绍三种使用火焰图方式，两种方式需要的工具和操作步骤有所不一样，下面将针对三种方式逐一解释如何操作，本文属于基础篇，重点介绍环境搭建和基本用法。
+这里将介绍三种使用火焰图方式，三种方式需要的工具和操作步骤有所不一样，下面将针对三种方式逐一解释如何操作，本文属于基础篇，重点介绍环境搭建和基本用法。
 
-- 方式一(java)：需要``JDK1.8``、``FlameGraph``、``perf-map-agent``。
-- 方法二(java)：需要``JDK1.8``、``JCMD``、``jfr-flame-graph``、``FlameGraph``。
-- 方法三(C/C++):需要``perf``、``FlameGraph``。
+- 方式一(java)：需要工具
+``JDK1.8``
+``FlameGraph``
+``perf-map-agent``
+- 方法二(java)：需要工具
+``JDK1.8``
+``JCMD``
+``jfr-flame-graph``
+``FlameGraph``
+- 方法三(C/C++):需要工具
+``perf``
+``FlameGraph``
 
 ## 火焰图方式一
 该方式适用于java应用。
