@@ -133,5 +133,10 @@ highlighter: rouge
 {% endhighlight %}
 
 ## 效果图
+<p>
+<object class="p" data="/images/flamegraph-example-1.svg" type="image/svg+xml" width=900 height=563>
+<img src="/images/flamegraph-example-1.svg" width=900 />
+</object>
+</p>
 [FlameGraph]({{site.baseurl}}/images/flamegraph-example-1.svg)
 ![FlameGraph]({{site.baseurl}}/images/flamegraph-example-1.svg)
