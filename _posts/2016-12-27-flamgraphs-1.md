@@ -28,7 +28,7 @@ highlighter: rouge
 ``perf``
 ``FlameGraph``
 
-## 火焰图方式一
+## JAVA火焰图方式一
 该方式适用于java应用。
 
 ### 安装JDK1.8
@@ -64,7 +64,7 @@ highlighter: rouge
 - -a		是所有CPU
 - -g      	是采样堆栈
 
-## 火焰图方式二
+## JAVA火焰图方式二
 该方式适用于java应用。
 
 ### 安装JDK1.8
@@ -72,10 +72,10 @@ highlighter: rouge
 
 ### 安装jfr-flame-graph
 {% highlight markdown %}
-1.>git clone https://github.com/chrishantha/jfr-flame-graph
-2.>cd jfr-flame-graph
-3.>./install-mc-jars.sh
-4.>mvn clean install -U
+1.[xnn99@xxx]>git clone https://github.com/chrishantha/jfr-flame-graph
+2.[xnn99@xxx]>cd jfr-flame-graph
+3.[xnn99@xxx]>./install-mc-jars.sh
+4.[xnn99@xxx]>mvn clean install -U
 {% endhighlight %}
 
 ### 配置JVM参数
@@ -86,31 +86,32 @@ highlighter: rouge
 
 ### 开始采样
 {% highlight markdown %}
->sudo -u <java_user> -i jcmd <pid> JFR.start filename=/tmp/app.jfr duration=60s
+[xnn99@jfr-flame-graph]>sudo -u <java_user> -i jcmd <pid> JFR.start filename=/tmp/app.jfr duration=60s
 {% endhighlight %}
 
-<java_user> 就是java进程运行的账户。
-<pid> 是目标进程PID。
-filename 是输出文件生成位置。
-duration 持续采样周期。
+- <java_user> 就是java进程运行的账户。
+- <pid> 是目标进程PID。
+- filename 是输出文件生成位置。
+- duration 持续采样周期。
 
 ### 检查采样是否完成
 {% highlight markdown %}
->sudo -u <java_user> -i jcmd <pid> JFR.check
+[xnn99@jfr-flame-graph]>sudo -u <java_user> -i jcmd <pid> JFR.check
 {% endhighlight %}
 
 ### 生成火焰图
 {% highlight markdown %}
->flamegraph-output.sh folded -f app.jfr -o app.txt 
->cat app.txt | FlameGraph/flamegraph.pl >app.svg
+[xnn99@jfr-flame-graph]>flamegraph-output.sh folded -f app.jfr -o app.txt 
+[xnn99@jfr-flame-graph]>cat app.txt | FlameGraph/flamegraph.pl >app.svg
 {% endhighlight %}
 
 还有一种更简单的方式：
 {% highlight markdown %}
->./create_flamegraph.sh -f app.jfr >my.svg
+[xnn99@jfr-flame-graph]>./create_flamegraph.sh -f app.jfr >my.svg
 {% endhighlight %}
 
-## 火焰图方式三
+## C/C++火焰图方式三
+
 该方式适用于C、C++，相对java来说要简单很多。
 
 ### Perf采样
@@ -119,15 +120,16 @@ duration 持续采样周期。
 {% endhighlight %}
 这一步会生成perf.data文件。
 
+
 ### 创建中间文件
 {% highlight markdown %}
->perf script | ./stackcollapse-perf.pl > out.perf-folded
+[xnn99@flamegraph]>perf script | ./stackcollapse-perf.pl > out.perf-folded
 {% endhighlight %}
 这个命令会读取perf.data文件，script是必须的。
 
 ### 生成火焰图
 {% highlight markdown %}
-> ./flamegraph.pl out.perf-folded > perf-kernel.svg
+[xnn99@flamegraph]> ./flamegraph.pl out.perf-folded > perf-kernel.svg
 {% endhighlight %}
 
 ## 效果图
