@@ -129,8 +129,8 @@ highlighter: rouge
 
 ### 生成火焰图
 {% highlight markdown %}
-[xnn99@flamegraph]> ./flamegraph.pl out.perf-folded > perf-kernel.svg
+[xnn99@flamegraph]> ./flamegraph.pl out.perf-folded > perf-example.svg
 {% endhighlight %}
 
 ## 效果图
-![display]({{site.baseurl}}/images/flamegraph-example-1.svg)
+![FlameGraph]({{site.baseurl}}/images/flamegraph-example-1.svg)
