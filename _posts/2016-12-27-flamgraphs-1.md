@@ -9,3 +9,39 @@ author: Carlwang
 
 * some text
 {: toc}
+
+## 环境准备
+这里将介绍三种使用火焰图方式，两种方式需要的工具和操作步骤有所不一样，下面将针对三种方式逐一解释如何操作，本文属于基础篇，重点介绍环境搭建和基本用法。
+
+- 方式一(java)：需要``JDK1.8``、``FlameGraph``、``perf-map-agent``。
+- 方法二(java)：需要``JDK1.8``、``JCMD``、``jfr-flame-graph``、``FlameGraph``。
+- 方法三(C/C++):需要``perf``、``FlameGraph``。
+
+## 火焰图方式一
+该方式适用于java应用。
+### 安装JDK1.8
+下载``JDK1.8``，安装完毕后配置``JAVA_HOME``,这一步是必须的并且必须是``JDK1.8``。
+### 克隆perf-map-agent
+{% highlight markdown %}
+1.git clone --depth=1 https://github.com/jrudolph/perf-map-agent
+2.cd perf-map-agent
+3.cmake .
+4.make
+{% endhighlight %}
+### 克隆FlameGraph
+{% highlight markdown %}
+1.git clone --depth=1 https://github.com/brendangregg/FlameGraph
+2.sudo su
+3.export FLAMEGRAPH_DIR=/home/xxx/FlameGraph //这里是FlameGraph路径
+4.export PERF_RECORD_SECONDS=120    //这里是记录时间
+{% endhighlight %}
+到这不环境已经配置成功！接下来可以使用perf-map-agent生成性能火焰图。
+### 生成火焰图
+{% highlight markdown %}
+>/home/xxx/perf-map-agent/bin/perf-java-flames 1122 -F 99 -a -g
+{% endhighlight %}
+
+- 1122    	是目标进程PID
+- —F 99		是采样频率99
+- -a		是所有CPU
+- -g      	是采样堆栈
