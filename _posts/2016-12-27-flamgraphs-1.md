@@ -133,4 +133,5 @@ highlighter: rouge
 {% endhighlight %}
 
 ## 效果图
+[FlameGraph]({{site.baseurl}}/images/flamegraph-example-1.svg)
 ![FlameGraph]({{site.baseurl}}/images/flamegraph-example-1.svg)
