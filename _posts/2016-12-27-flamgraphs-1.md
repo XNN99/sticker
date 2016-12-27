@@ -36,18 +36,18 @@ highlighter: rouge
 
 ### 克隆perf-map-agent
 {% highlight markdown %}
-1.git clone --depth=1 https://github.com/jrudolph/perf-map-agent
-2.cd perf-map-agent
-3.cmake .
-4.make
+1.[xnn99@xxx]>git clone --depth=1 https://github.com/jrudolph/perf-map-agent
+2.[xnn99@xxx]>cd perf-map-agent
+3.[xnn99@perf-map-agent]>cmake .
+4.[xnn99@perf-map-agent]>make
 {% endhighlight %}
 
 ### 克隆FlameGraph
 {% highlight markdown %}
-1.>git clone --depth=1 https://github.com/brendangregg/FlameGraph
-2.>sudo su
-3.>export FLAMEGRAPH_DIR=/home/xxx/FlameGraph //这里是FlameGraph路径
-4.>export PERF_RECORD_SECONDS=120    //这里是记录时间
+1.[xnn99@xxx]>git clone --depth=1 https://github.com/brendangregg/FlameGraph
+2.[xnn99@xxx]>sudo su
+3.[xnn99@xxx]>export FLAMEGRAPH_DIR=/home/xxx/FlameGraph //这里是FlameGraph路径
+4.[xnn99@xxx]>export PERF_RECORD_SECONDS=120    //这里是记录时间
 {% endhighlight %}
 到这不环境已经配置成功！接下来可以使用perf-map-agent生成性能火焰图。
 
@@ -56,7 +56,7 @@ highlighter: rouge
 
 ### 生成火焰图
 {% highlight markdown %}
->/home/xxx/perf-map-agent/bin/perf-java-flames 1122 -F 99 -a -g
+[xnn99@perf-map-agent]>./bin/perf-java-flames 1122 -F 99 -a -g
 {% endhighlight %}
 
 - 1122    	是目标进程PID
@@ -74,8 +74,8 @@ highlighter: rouge
 {% highlight markdown %}
 1.[xnn99@xxx]>git clone https://github.com/chrishantha/jfr-flame-graph
 2.[xnn99@xxx]>cd jfr-flame-graph
-3.[xnn99@xxx]>./install-mc-jars.sh
-4.[xnn99@xxx]>mvn clean install -U
+3.[xnn99@jfr-flame-graph]>./install-mc-jars.sh
+4.[xnn99@jfr-flame-graph]>mvn clean install -U
 {% endhighlight %}
 
 ### 配置JVM参数
@@ -116,7 +116,7 @@ highlighter: rouge
 
 ### Perf采样
 {% highlight markdown %}
-> perf record -p <pid> -F 99 -a -g -- sleep 60
+[xnn99@flamegraph]> perf record -p <pid> -F 99 -a -g -- sleep 60
 {% endhighlight %}
 这一步会生成perf.data文件。
 
