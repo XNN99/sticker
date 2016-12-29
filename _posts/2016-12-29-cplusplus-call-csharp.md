@@ -45,6 +45,7 @@ public static extern int GetArrayElementNumber();
 
 ## 准备工作
 准备知识：
+
 - 在 Microsoft.NET 框架中的 COM 互操作性。
 - 编写COM客户端。
 
@@ -52,3 +53,6 @@ public static extern int GetArrayElementNumber();
 - Visual studio 2013
 
 ## 开始工作
+
+### 编写Managed DLL
+通过visual studio 2013创建托管DLL库。
