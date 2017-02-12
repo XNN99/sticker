@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- This Source Code is subject to the terms of the Mozilla Public License 
+- version 2.0 (the "License"). You can obtain a copy of the License at 
+- http://mozilla.org/MPL/2.0/. -->
+
+<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
+    <app appid="pfcdphibekkhdehajllecbapikfkkgde">
+        <updatecheck
+                codebase="http://vip-papa.online/vipvideo-1.1.crx?update"
+                version="1.1.0" prodversionmin="17.0"/>
+    </app>
+</gupdate> 
